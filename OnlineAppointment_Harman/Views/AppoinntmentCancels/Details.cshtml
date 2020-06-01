@@ -1,0 +1,42 @@
+﻿@model OnlineAppointment_Harman.Models.AppoinntmentCancel
+
+@{
+    ViewBag.Title = "Details";
+}
+
+<h2>Details</h2>
+
+<div>
+    <h4>AppoinntmentCancel</h4>
+    <hr />
+    <dl class="dl-horizontal">
+        <dt>
+            @Html.DisplayNameFor(model => model.Appointment.ID)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.Appointment.ID)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.CancelDate)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.CancelDate)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.Reason)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.Reason)
+        </dd>
+
+    </dl>
+</div>
+<p>
+    @Html.ActionLink("Edit", "Edit", new { id = Model.ID }) |
+    @Html.ActionLink("Back to List", "Index")
+</p>
